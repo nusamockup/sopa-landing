@@ -2,7 +2,7 @@
 
 (function () {
   let video =
-      "<iframe class='embed-responsive-item' src='/assets/video/sopa-video.mp4' frameborder='0' allowfullscreen></iframe>";
+      "<iframe class='embed-responsive-item' src='/assets/video/sopa-video-2.mp4' frameborder='0' allowfullscreen></iframe>";
   let video_frame = $('.video__video');
   video_frame.on('click', function (e) {
     e.preventDefault();
