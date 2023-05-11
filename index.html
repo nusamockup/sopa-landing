@@ -1,740 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/main.css" id="main_style">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,800" rel="stylesheet">
-  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
-  <title>Sigma</title>
-  <link rel="icon" href="assets/img/Logo_32x32.png" type="image/png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--Switcher-->
-<div class="style-switcher">
-  <span class="style-switcher__control"></span>
-  <div class="style-switcher__list">
-    <a class="style-switcher__link style-switcher__link--red active" href="assets/css/red.css"></a>
-    <a class="style-switcher__link style-switcher__link--blue" href="assets/css/blue.css"></a>
-    <a class="style-switcher__link style-switcher__link--violet" href="assets/css/violet.css"></a>
-    <a class="style-switcher__link style-switcher__link--green" href="assets/css/green.css"></a> <br/>
-    <a class="style-switcher__link style-switcher__link--red-gradient" href="assets/css/red-gradient.css"></a>
-    <a class="style-switcher__link style-switcher__link--blue-gradient" href="assets/css/blue-gradient.css"></a>
-    <a class="style-switcher__link style-switcher__link--violet-gradient" href="assets/css/violet-gradient.css"></a>
-    <a class="style-switcher__link style-switcher__link--green-gradient" href="assets/css/green-gradient.css"></a>
-  </div>
-</div>
-<!--Switcher-->
+        <title>SocietyPass – SoPa | Society Pass App</title>
 
-<!--Main menu-->
-<div class="menu">
-  <div class="container menu__wrapper">
-    <div class="row">
-      <div class="menu__logo menu__item">
-        <a href="index.html">
-          <svg class="menu__logo-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <path data-name="Sigma symbol" class="svg-element"
-                  d="M237.418,8583.56a12.688,12.688,0,0,0,.419-3.37c-0.036-5.24-2.691-9.68-7.024-13.2h-3.878a20.819,20.819,0,0,1,4.478,13.01c0,4.56-2.456,10.2-6.413,11.4a16.779,16.779,0,0,1-2.236.51c-10.005,1.55-14.109-17.54-9.489-23.31,2.569-3.21,6.206-4.08,11.525-4.08h17.935A24.22,24.22,0,0,1,237.418,8583.56Zm-12.145-24.45c-8.571.02-12.338,0.98-16.061,4.84-6.267,6.49-6.462,20.69,4.754,27.72a24.092,24.092,0,1,1,27.3-32.57h-16v0.01Z"
-                  transform="translate(-195 -8544)"/>
-          </svg>
-          <p class="menu__logo-title">Sigma</p>
-        </a>
-      </div>
-      <div class="menu__item d-t-none">
-        <nav class="menu__center-nav">
-          <ul>
-            <li>
-              <div class="menu__dropdown">
-                <a class="link link--gray menu__dropdown-btn">Home
-                  <span><i class="mdi mdi-chevron-down"></i></span>
-                </a>
-                <div class="menu__dropdown-content menu__dropdown-content--home">
-                  <a class="link link--gray link--gray-active" href="">Mobile App</a>
-                  <a class="link link--gray" href="02_messenger.html">Messenger</a>
-                  <a class="link link--gray" href="03_webapp.html">Web App</a>
-                  <a class="link link--gray" href="04_desktop.html">Desktop App</a>
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png"/>
+        <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5"/>
+        <link rel="manifest" href="assets/img/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+        <script src="//polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+        <link rel="preconnect" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="assets/css/main.css" id="main_style" />
+        <link rel="stylesheet" href="assets/css/index.css" id="main_style" />
+    </head>
+    <body>
+        <!--Main menu-->
+        <div class="menu">
+            <div class="container menu__wrapper">
+                <div class="row">
+                    <div class="menu__logo menu__item">
+                        <a href="/">
+                            <img src="assets/img/sopa-logo-color.png" height="48" alt="SocietyPass Logo">
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <nav class="menu__right-nav d-l-none">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="#download"
+                                        class="site-btn site-btn--accent"
+                                        >Get the App</a
+                                    >
+                                </li>
+                                <li>
+                                    <div class="menu__dropdown d-t-none">
+                                        <a
+                                            class="link link--gray menu__dropdown-btn"
+                                            >En
+                                            <span
+                                                ><i
+                                                    class="mdi mdi-chevron-down"
+                                                ></i
+                                            ></span>
+                                        </a>
+                                        <div class="menu__dropdown-content">
+                                            <a
+                                                class="link link--gray link--gray-active"
+                                                href="#"
+                                                >En</a
+                                            >
+                                            <a class="link link--gray" href="#"
+                                                >Id</a
+                                            >
+                                            <a class="link link--gray" href="#"
+                                                >Vn</a
+                                            >
+                                            <a class="link link--gray" href="#"
+                                                >Th</a
+                                            >
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="d-none d-t-block">
+                            <button type="button" class="menu__mobile-button">
+                                <span
+                                    ><i
+                                        class="mdi mdi-menu"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </li>
-            <li><a href="05_features.html" class="link link--gray">Features</a></li>
-            <li><a href="06_pricing.html" class="link link--gray">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="menu__item">
-        <nav class="menu__right-nav d-l-none">
-          <ul>
-            <li><a href="10_get-app.html" class="site-btn site-btn--accent">Get the Sigma</a></li>
-            <li>
-              <div class="menu__dropdown d-t-none">
-                <a class="link link--gray menu__dropdown-btn">En
-                  <span><i class="mdi mdi-chevron-down"></i></span>
-                </a>
-                <div class="menu__dropdown-content">
-                  <a class="link link--gray link--gray-active" href="#">En</a>
-                  <a class="link link--gray" href="#">Fr</a>
-                  <a class="link link--gray" href="#">Ch</a>
+            </div>
+        </div>
+        <!--Main menu-->
+
+        <!--Mobile menu-->
+        <div class="mobile-menu d-none d-t-block">
+            <div class="container">
+                <div class="mobile-menu__logo">
+                    <img src="assets/img/sopa-logo-color.png" height="48" alt="SocietyPass Logo">
                 </div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="d-none d-t-block">
-          <button type="button" class="menu__mobile-button">
-            <span><i class="mdi mdi-menu" aria-hidden="true"></i></span>
-          </button>
+                <button type="button" class="mobile-menu__close">
+                    <span
+                        ><i class="mdi mdi-close" aria-hidden="true"></i
+                    ></span>
+                </button>
+                <nav class="mobile-menu__wrapper">
+                    <ul class="mobile-menu__ul">
+                        <li class="mobile-menu__li">
+                            <a
+                                href="#download"
+                                class="site-btn site-btn--accent"
+                                >Get the App</a
+                            >
+                        </li>
+                        <li class="mobile-menu__li mobile-menu__li-collapse">
+                            <a class="link link--dark-gray"
+                                >En
+                                <span><i class="mdi mdi-chevron-down"></i></span
+                            ></a>
+                        </li>
+                        <li class="mobile-menu__ul--collapsed">
+                            <ul class="mobile-menu__ul">
+                                <li class="mobile-menu__li">
+                                    <a href="" class="link link--gray link--gray-active">En</a>
+                                </li>
+                                <li class="mobile-menu__li">
+                                    <a href="" class="link link--gray">Id</a>
+                                </li>
+                                <li class="mobile-menu__li">
+                                    <a href="" class="link link--gray">Vn</a>
+                                </li>
+                                <li class="mobile-menu__li">
+                                    <a href="" class="link link--gray">Th</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Main menu-->
+        <!--Mobile menu-->
 
-<!--Mobile menu-->
-<div class="mobile-menu d-none d-t-block">
-  <div class="container">
-    <div class="mobile-menu__logo">
-      <svg class="menu__logo-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-        <path data-name="Sigma symbol" class="svg-element"
-              d="M237.418,8583.56a12.688,12.688,0,0,0,.419-3.37c-0.036-5.24-2.691-9.68-7.024-13.2h-3.878a20.819,20.819,0,0,1,4.478,13.01c0,4.56-2.456,10.2-6.413,11.4a16.779,16.779,0,0,1-2.236.51c-10.005,1.55-14.109-17.54-9.489-23.31,2.569-3.21,6.206-4.08,11.525-4.08h17.935A24.22,24.22,0,0,1,237.418,8583.56Zm-12.145-24.45c-8.571.02-12.338,0.98-16.061,4.84-6.267,6.49-6.462,20.69,4.754,27.72a24.092,24.092,0,1,1,27.3-32.57h-16v0.01Z"
-              transform="translate(-195 -8544)"/>
-      </svg>
-    </div>
-    <button type="button" class="mobile-menu__close">
-      <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
-    </button>
-    <nav class="mobile-menu__wrapper">
-      <ul class="mobile-menu__ul">
-        <li class="mobile-menu__li mobile-menu__li-collapse"><a class="link link--dark-gray">Home
-          <span><i class="mdi mdi-chevron-down"></i></span>
-        </a></li>
-        <li class="mobile-menu__ul--collapsed">
-          <ul class="mobile-menu__ul">
-            <li class="mobile-menu__li"><a class="link link--gray link--gray-active" href="">Mobile
-              App</a>
-            </li>
-            <li class="mobile-menu__li"><a class="link link--gray" href="02_messenger.html">Messenger</a></li>
-            <li class="mobile-menu__li"><a class="link link--gray" href="03_webapp.html">Web App</a></li>
-            <li class="mobile-menu__li"><a class="link link--gray" href="04_desktop.html">Desktop App</a></li>
-          </ul>
-        </li>
-        <li class="mobile-menu__li"><a href="05_features.html" class="link link--dark-gray">Features</a></li>
-        <li class="mobile-menu__li"><a href="06_pricing.html" class="link link--dark-gray">Pricing</a></li>
-        <li class="mobile-menu__li"><a href="10_get-app.html" class="site-btn site-btn--accent">Get the Sigma</a></li>
-        <li class="mobile-menu__li mobile-menu__li-collapse"><a class="link link--dark-gray">En
-          <span><i class="mdi mdi-chevron-down"></i></span></a></li>
-        <li class="mobile-menu__ul--collapsed">
-          <ul class="mobile-menu__ul">
-            <li class="mobile-menu__li"><a href="" class="link link--gray link--gray-active">En</a></li>
-            <li class="mobile-menu__li"><a href="" class="link link--gray">Fr</a></li>
-            <li class="mobile-menu__li"><a href="" class="link link--gray">Ch</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-<!--Mobile menu-->
+        <!--Header-->
+        <header class="header-home">
+            <div
+                class="container background background--right background--header background--mobile"
+                style="background-image: url('assets/img/img_background.png')"
+            >
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="header-home__title">
+                            Society Pass App that makes your life easier
+                        </h2>
+                        <p class="header-home__description">
+                            Open loop loyalty platform to create permanent customer loyalty, generate revenues for merchants, and replace cash discounting.
+                        </p>
+                        <div class="header-home__btns header-home__btns-mobile">
+                            <a
+                                href="#download"
+                                class="site-btn site-btn--accent header-home__btn"
+                                >Download Now</a
+                            >
+                            <a
+                                href="#features"
+                                class="site-btn site-btn--light header-home__btn"
+                                >Explore Features</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Header-->
 
-<!--Header-->
-<header class="header-home">
-  <div class="container background background--right background--header background--mobile"
-       style="background-image: url('assets/img/img_background.png');">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="header-home__title">Great App that makes your life easier</h2>
-        <p class="header-home__description">Meet Sigma. The simple, intuitive and powerful app to manage your work.
-          Explore app of the next generation for free and become a part of community of like-minded members.</p>
-        <div class="header-home__btns header-home__btns-mobile">
-          <a href="10_get-app.html" class="site-btn site-btn--accent header-home__btn">Start Using for Free</a>
-          <a href="05_features.html" class="site-btn site-btn--light header-home__btn">Explore Features</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!--Header-->
-
-<!--Features-->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">The only app you’ll need to power your life.<br/>
-          Learn how:</h3>
-      </div>
-    </div>
-    <div class="row features">
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#freetrial">
-          <div class="features__card card">
-            <!--We use svg-tag for using color-switcher of preview. And svg help you easy change color for your
+        <!--Features-->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section__title">
+                            The only app you’ll need to power your life.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row features">
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <!--We use svg-tag for using color-switcher of preview. And svg help you easy change color for your
               web-site. But you can replace svg tag to img like this:
               <img alt="" class="features__img" src="assets/img/img_feature_1.png" alt="">-->
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120"
-                 viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M12,20a2,2,0,0,1,2,2V34a2,2,0,0,1-4,0V22A2,2,0,0,1,12,20ZM6,26H18a2,2,0,0,1,0,4H6A2,2,0,0,1,6,26ZM8,72a2,2,0,0,1,2,2V86a2,2,0,0,1-4,0V74A2,2,0,0,1,8,72ZM2,78H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,78Zm98,14a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,100,92Zm-6,6h12a2,2,0,0,1,0,4H94A2,2,0,0,1,94,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <g>
-                <rect class="svg-dark-gray" x="36" y="20" width="44" height="80" rx="4" ry="4"/>
-                <path class="svg-white"
-                      d="M40,30H76a2,2,0,0,1,2,2V86a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V32A2,2,0,0,1,40,30ZM58.5,91.25a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,58.5,91.25Z"/>
-              </g>
-              <g id="label">
-                <circle id="circle-2" data-name="circle" class="svg-element" cx="58" cy="59" r="16"/>
-                <image id="Free" x="46" y="55" width="23" height="8"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAICAMAAAAldJTcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAD///////////////////////////////////////////////////////////8AAAC3K8SQAAAAD3RSTlMAVSJm3arMiLsR7ndEmTPX6l4jAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAFtJREFUCNdtjVEOgDAIQ7vBkMkm97+tYGaixn6Q5oX0oXim4hti/Gbx1piruG9R3bWDcmaHcocawMMaMO3+D9YvE0ne+eJHNrHnfm7oBOywAINQljd4erWmV8YJJGkDageXzLEAAAAASUVORK5CYII="/>
-              </g>
-            </svg>
-            <p class="features__title">Free Trial</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#nosetup">
-          <div class="features__card card">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120"
-                 viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M36,6H48a2,2,0,0,1,0,4H36A2,2,0,0,1,36,6Zm6-6a2,2,0,0,1,2,2V14a2,2,0,0,1-4,0V2A2,2,0,0,1,42,0ZM16,110H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,22,104Zm70-6h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,98Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,98,92ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <g id="speed">
-                <path id="scale" class="svg-dark-gray"
-                      d="M60,31h0A33,33,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H30.182A3.182,3.182,0,0,1,27,66.818V64A33,33,0,0,1,60,31Z"/>
-                <path id="max" class="svg-element"
-                      d="M83.671,41.019A32.883,32.883,0,0,1,93,64v2.818A3.182,3.182,0,0,1,89.818,70H60V64.69Z"/>
-                <circle class="svg-gray" cx="60" cy="64" r="25"/>
-                <image id="arrow" x="53" y="57" width="30" height="14"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAOCAMAAAAPOFwLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABdYQRBAAAAKXRSTlMAFIbS+NCCU/Dx/hX1waOHbE4yFtzAaxOS9ti8oYNnTC4QaFTy0/r0zpnURg4AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAgUlEQVQY05WRUQ6CMBBEBylgK4JQFEQqqKjs/S9IEGIa3TTh/b5kM7MDAN7GFyIIPbBEW/ogI9YqWlCM30n6Eu+T9JDl2tIh/SOKY5KesrwEAnJQQbh07NSqYo+f60tjrm13+4nmN+bedqWVXFvFpF77FuDRz7Zn7TTJ8/UeDDfJCDOoIidStO0EAAAAAElFTkSuQmCC"/>
-              </g>
-            </svg>
-            <p class="features__title">No setup</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#safety">
-          <div class="features__card card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M112,36a2,2,0,0,1,2,2V50a2,2,0,0,1-4,0V38A2,2,0,0,1,112,36Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,42ZM8,8a2,2,0,0,1,2,2V22a2,2,0,0,1-4,0V10A2,2,0,0,1,8,8ZM2,14H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,14ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <g id="shield">
-                <path id="shield_light" class="svg-light"
-                      d="M60.752,81.9A2.866,2.866,0,0,1,60,82V16a1.975,1.975,0,0,1,1.18.393c3.37,2.5,13.594,9.343,26.121,10.54A3,3,0,0,1,89.993,29.9C90.138,39.995,88.551,74.278,60.752,81.9Z"/>
-                <path id="shield_dark" class="svg-gray"
-                      d="M59.248,81.9A2.867,2.867,0,0,0,60,82V16a1.975,1.975,0,0,0-1.18.393c-3.37,2.5-13.594,9.343-26.121,10.54A3,3,0,0,0,30.007,29.9C29.862,39.995,31.449,74.278,59.248,81.9Z"/>
-              </g>
-              <g id="lock">
-                <path id="lock-2" data-name="lock" class="svg-element"
-                      d="M70,75.25H88a4,4,0,0,1,4,4V92a4,4,0,0,1-4,4H70a4,4,0,0,1-4-4V79.25A4,4,0,0,1,70,75.25Zm13.522,0v-4.61c0-2.864-1.712-5.186-4.522-5.186s-4.522,2.322-4.522,5.186v4.61H71.087V68.915A6.85,6.85,0,0,1,77.87,62H80.13a6.85,6.85,0,0,1,6.783,6.915v6.339H83.522Z"/>
-                <path id="hole" class="svg-white"
-                      d="M79,78.75A3.453,3.453,0,1,1,75.594,82.2,3.43,3.43,0,0,1,79,78.75ZM77.3,82.17H80.7l1.13,8.068H76.174Z"/>
-              </g>
-            </svg>
-            <p class="features__title">Safety</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#optimized">
-          <div class="features__card card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M90,110h12a2,2,0,0,1,0,4H90A2,2,0,0,1,90,110Zm6-6a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V106A2,2,0,0,1,96,104ZM92,8h12a2,2,0,0,1,0,4H92A2,2,0,0,1,92,8Zm6-6a2,2,0,0,1,2,2V16a2,2,0,0,1-4,0V4A2,2,0,0,1,98,2ZM16,20H28a2,2,0,0,1,0,4H16A2,2,0,0,1,16,20Zm6-6a2,2,0,0,1,2,2V28a2,2,0,0,1-4,0V16A2,2,0,0,1,22,14Zm38,6A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <g>
-                <rect id="Прямоугольник_скругл._углы_2_копия_2" data-name="Прямоугольник, скругл. углы 2 копия 2"
-                      class="svg-dark-gray" x="38" y="20" width="44" height="80" rx="4" ry="4"/>
-                <path id="Эллипс_2_копия" data-name="Эллипс 2 копия" class="svg-white"
-                      d="M42,30H78a2,2,0,0,1,2,2V86a2,2,0,0,1-2,2H42a2,2,0,0,1-2-2V32A2,2,0,0,1,42,30ZM60.5,91.25a2.5,2.5,0,1,1-2.5,2.5A2.5,2.5,0,0,1,60.5,91.25Z"/>
-              </g>
-              <g id="UI">
-                <rect id="image" class="svg-light-gray" x="44" y="34" width="32" height="14" rx="2" ry="2"/>
-                <path id="text" class="svg-light"
-                      d="M46,52h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,52Zm0,8h4a2,2,0,0,1,0,4H46A2,2,0,0,1,46,60Z"/>
-                <path id="text-2" data-name="text" class="svg-gray"
-                      d="M56,52H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,52Zm0,8H74a2,2,0,0,1,0,4H56A2,2,0,0,1,56,60Z"/>
-                <path id="text-3" data-name="text" class="svg-dark-gray"
-                      d="M66,68h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,68Zm0,8h8a2,2,0,0,1,0,4H66A2,2,0,0,1,66,76Z"/>
-                <path id="text-4" data-name="text" class="svg-element"
-                      d="M52,68h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,68Zm0,8h8a2,2,0,0,1,0,4H52A2,2,0,0,1,52,76Z"/>
-              </g>
-            </svg>
-            <p class="features__title">Optimized Data</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#access">
-          <div class="features__card card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M112,20a2,2,0,0,1,2,2V34a2,2,0,0,1-4,0V22A2,2,0,0,1,112,20Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,26ZM8,16a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,8,16ZM2,22H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,22ZM20,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,20,92Zm-6,6H26a2,2,0,0,1,0,4H14A2,2,0,0,1,14,98ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <g id="login">
-                <rect class="svg-element" x="51" y="84" width="18" height="6" rx="3" ry="3"/>
-                <path id="input" class="svg-gray"
-                      d="M41,72H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,72Zm0-10H79a3,3,0,0,1,0,6H41A3,3,0,0,1,41,62Z"/>
-                <path id="user" class="svg-dark-gray"
-                      d="M60,32a5,5,0,1,1-5,5A5,5,0,0,1,60,32ZM58,42h4a7,7,0,0,1,7,7v3H51V49A7,7,0,0,1,58,42Z"/>
-              </g>
-            </svg>
-            <p class="features__title">Quick Access</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-2 col-m-4 col-l-6">
-        <a href="05_features.html#support">
-          <div class="features__card card">
-            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-              <rect class="svg-bg" width="120" height="120"/>
-              <path class="svg-light-gray"
-                    d="M8,72a2,2,0,0,1,2,2V86a2,2,0,0,1-4,0V74A2,2,0,0,1,8,72ZM2,78H14a2,2,0,0,1,0,4H2A2,2,0,0,1,2,78ZM112,92a2,2,0,0,1,2,2v12a2,2,0,0,1-4,0V94A2,2,0,0,1,112,92Zm-6,6h12a2,2,0,0,1,0,4H106A2,2,0,0,1,106,98Zm-6-82a2,2,0,0,1,2,2V30a2,2,0,0,1-4,0V18A2,2,0,0,1,100,16Zm-6,6h12a2,2,0,0,1,0,4H94A2,2,0,0,1,94,22ZM60,20A40,40,0,1,1,20,60,40,40,0,0,1,60,20Z"/>
-              <path id="headphones" class="svg-dark-gray"
-                    d="M83,71a4,4,0,0,1-4-4V59h0a19,19,0,0,0-38,0V71a8,8,0,0,0,8,8h5.779A2.981,2.981,0,0,1,57,78h6a3,3,0,0,1,0,6H57a2.981,2.981,0,0,1-2.221-1H47A10,10,0,0,1,37,73V71a4,4,0,0,1-4-4V61a4,4,0,0,1,4-4h0.1a22.985,22.985,0,0,1,45.8,0H83a4,4,0,0,1,4,4v6A4,4,0,0,1,83,71Z"/>
-              <text id="_24h" data-name="24h" class="svg-element svg-text" x="60.5" y="65.25">24h</text>
-            </svg>
-            <p class="features__title">24h Support</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <hr>
-  </div>
-</section>
-<!--Features-->
+                                <img src="assets/img/icons/loyalty.png" alt="">
+                                <p class="features__title">Loyalty</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <img src="assets/img/icons/lifestyle.png" alt="">
+                                <p class="features__title">Lifestyle</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <img src="assets/img/icons/fnb.png" alt="">
+                                <p class="features__title">Food & Beverage</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <img src="assets/img/icons/telecoms.png" alt="">
+                                <p class="features__title">Telecoms</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <img src="assets/img/icons/digital.png" alt="">
+                                <p class="features__title">Digital Media</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-2 col-m-4 col-l-6">
+                        <a href="javascript:void(0)">
+                            <div class="features__card card">
+                                <img src="assets/img/icons/travel.png" alt="">
+                                <p class="features__title">Travel</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </section>
+        <!--Features-->
 
-<!--Video-->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">Explore app of the next generation.<br/>
-          Watch the video.</h3>
-      </div>
-    </div>
-    <div class="row video">
-      <div class="col-offset-1 col-10 col-t-12 ">
-        <div class="video__video" data-video="_DHPmGeXa-k">
-          <div class="video__play"><img src="assets/img/img_play_btn.png" alt=""></div>
-          <div class="embed-responsive">
-            <div class="embed-responsive-item"></div>
-          </div>
-        </div>
-        <!--<div class="video__wrap">-->
-        <!--<video class="video__content" controls="controls">-->
-        <!--<source src="assets/video/somethingmorev2mp4.mp4">-->
-        <!--</video>-->
-        <!--</div>-->
-      </div>
-    </div>
-    <hr>
-  </div>
-</section>
-<!--Video-->
+        <!--Video-->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section__title">
+                            Explore App of The Next Generation Digital Ecosystem.<br />
+                            Watch the video.
+                        </h3>
+                    </div>
+                </div>
+                <div class="row video">
+                    <div class="col-offset-1 col-10 col-t-12">
+                        <div class="video__video" data-video="_DHPmGeXa-k">
+                            <div class="video__play">
+                                <img src="assets/img/img_play_btn.png" alt="" />
+                            </div>
+                            <div class="embed-responsive">
+                                <div class="embed-responsive-item"></div>
+                            </div>
+                        </div>
+                        <!--<div class="video__wrap">-->
+                        <!--<video class="video__content" controls="controls">-->
+                        <!--<source src="assets/video/somethingmorev2mp4.mp4">-->
+                        <!--</video>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </section>
+        <!--Video-->
 
-<!--What is-->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">What is Sigma?</h3>
-        <p class="section__description">Meet Sigma. The simple, intuitive and powerful app to manage your work.
-          Explore app of the next generation for free and become a part of community of like-minded members.</p>
-      </div>
-    </div>
-    <div class="row about-app">
-      <div class="col-6 about-app__description">
-        <div class="about-app__description-content about-app__description-content--left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <path class="svg-element"
-                  d="M496.649,3155.93a1.94,1.94,0,0,0-1.939,1.94v11.78a2.476,2.476,0,0,1-2.473,2.47H461.351a2.475,2.475,0,0,1-2.473-2.47v-30.89a2.475,2.475,0,0,1,2.473-2.47h11.781a1.94,1.94,0,0,0,0-3.88H461.351a6.359,6.359,0,0,0-6.351,6.35v30.89a6.359,6.359,0,0,0,6.351,6.35h30.886a6.359,6.359,0,0,0,6.351-6.35v-11.78A1.94,1.94,0,0,0,496.649,3155.93Zm5.783-18.54-8.824-8.82a1.935,1.935,0,0,0-2.743,0l-22.06,22.06a1.919,1.919,0,0,0-.568,1.37v8.82a1.94,1.94,0,0,0,1.939,1.94H479a1.948,1.948,0,0,0,1.371-.56l22.061-22.07A1.936,1.936,0,0,0,502.432,3137.39ZM478.2,3158.88h-6.082v-6.08l20.122-20.12,6.082,6.08Z"
-                  transform="translate(-455 -3128)"/>
-          </svg>
-          <h4 class="about-app__description-title">Create</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat eros ac finibus congue.
-            Integer consectetur, lorem nec accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
-            Suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="col-6 about-app__img">
-        <div class="about-app__img-wrap">
-          <img alt="" src="assets/img/img_ui_1.png">
-        </div>
-      </div>
-    </div>
-    <div class="row about-app about-app--reverse">
-      <div class="col-6 about-app__description">
-        <div class="about-app__description-content">
-          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="48" viewBox="0 0 42 48">
-            <path class="svg-element"
-                  d="M1019.32,3629.62a4.6,4.6,0,0,0-1.57-1.56h0l-32.688-19.41h-0.01a4.7,4.7,0,0,0-6.4,1.61,4.616,4.616,0,0,0-.653,2.36h0v38.76a4.649,4.649,0,0,0,4.671,4.62h0a4.637,4.637,0,0,0,2.381-.65h0.009l32.689-19.38v-0.01A4.578,4.578,0,0,0,1019.32,3629.62Zm-3.6,3.02-32.67,19.38a0.758,0.758,0,0,1-.91-0.12,0.715,0.715,0,0,1-.219-0.52v-38.76h0a0.735,0.735,0,0,1,.1-0.38,0.75,0.75,0,0,1,.459-0.34,0.721,0.721,0,0,1,.565.08l32.67,19.4a0.667,0.667,0,0,1,.25.25A0.725,0.725,0,0,1,1015.72,3632.64Z"
-                  transform="translate(-978 -3608)"/>
-          </svg>
-          <h4 class="about-app__description-title">Run</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat eros ac finibus congue.</p>
-          <a href="10_get-app.html" class="site-btn site-btn--accent about-app__btn">Start Using for Free</a>
-        </div>
-      </div>
-      <div class="col-6 about-app__img about-app__img--left">
-        <div class="about-app__img-wrap">
-          <img alt="" src="assets/img/img_ui_2.png">
-        </div>
-      </div>
-    </div>
-    <div class="row about-app">
-      <div class="col-6 about-app__description">
-        <div class="about-app__description-content about-app__description-content--left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <path class="svg-element"
-                  d="M495.623,4102.78a1.367,1.367,0,0,1,1.246-.83h0.181a5.95,5.95,0,1,0,0-11.9h-0.333a1.379,1.379,0,0,1-1.136-.61,1.979,1.979,0,0,0-.126-0.4,1.372,1.372,0,0,1,.268-1.51l0.106-.1s0.006-.01.009-0.01a5.952,5.952,0,0,0,0-8.41s-0.006-.01-0.009-0.01a5.922,5.922,0,0,0-4.2-1.74h0a5.885,5.885,0,0,0-4.2,1.75l-0.111.11a1.354,1.354,0,0,1-1.506.26H485.78a1.376,1.376,0,0,1-.83-1.25v-0.18a5.95,5.95,0,0,0-11.9,0v0.33a1.368,1.368,0,0,1-.612,1.14,2.688,2.688,0,0,0-.4.12,1.354,1.354,0,0,1-1.506-.26l-0.115-.12a5.918,5.918,0,0,0-4.2-1.74h0a5.951,5.951,0,0,0-4.206,10.16l0.112,0.11a1.375,1.375,0,0,1,.268,1.51c-0.017.04-.032,0.08-0.046,0.11a1.36,1.36,0,0,1-1.236.9H460.95a5.95,5.95,0,0,0,0,11.9h0.333a1.368,1.368,0,0,1,1.254.83,0.167,0.167,0,0,1,.008.02,1.354,1.354,0,0,1-.268,1.5l-0.111.12h-0.008a5.95,5.95,0,0,0,.009,8.41c0,0.01.005,0.01,0.008,0.01a5.95,5.95,0,0,0,8.409-.01l0.111-.11a1.373,1.373,0,0,1,1.5-.27,0.542,0.542,0,0,0,.114.05,1.362,1.362,0,0,1,.9,1.24v0.15a5.95,5.95,0,1,0,11.9,0v-0.33a1.38,1.38,0,0,1,.831-1.26,0.019,0.019,0,0,0,.019-0.01,1.373,1.373,0,0,1,1.5.27l0.115,0.12a5.922,5.922,0,0,0,4.205,1.74h0a5.953,5.953,0,0,0,4.205-10.16l-0.111-.12a1.356,1.356,0,0,1-.268-1.5C495.618,4102.79,495.62,4102.79,495.623,4102.78Zm-2.506,4.24c0,0.01.01,0.01,0.015,0.02l0.121,0.12a2.076,2.076,0,0,1-1.467,3.54h0a2.077,2.077,0,0,1-1.467-.61l-0.12-.12s-0.01-.01-0.016-0.01a5.271,5.271,0,0,0-8.95,3.75v0.34a2.072,2.072,0,0,1-4.144,0v-0.18c0-.02,0-0.03,0-0.05a5.406,5.406,0,0,0-9.11-3.7s-0.01.01-.015,0.01l-0.121.12a2.071,2.071,0,0,1-2.931,0H464.9a2.076,2.076,0,0,1,0-2.93s0.005,0,.007-0.01l0.116-.11c0-.01.01-0.01,0.015-0.02a5.274,5.274,0,0,0-3.752-8.95H460.95a2.07,2.07,0,1,1,0-4.14h0.226a5.41,5.41,0,0,0,3.707-9.11c0-.01-0.01-0.01-0.015-0.02l-0.121-.12a2.076,2.076,0,0,1,1.466-3.54h0a2.032,2.032,0,0,1,1.466.61l0.121,0.12s0.01,0.01.015,0.01a5.2,5.2,0,0,0,5.413,1.2,1.87,1.87,0,0,0,.517-0.14,5.244,5.244,0,0,0,3.181-4.81v-0.34a2.072,2.072,0,0,1,4.144,0v0.19a5.271,5.271,0,0,0,8.95,3.74s0.01-.01.016-0.01l0.121-.12a2.024,2.024,0,0,1,1.465-.61h0a2.052,2.052,0,0,1,1.461.6s0,0.01.006,0.01a2.049,2.049,0,0,1,.608,1.46,2.079,2.079,0,0,1-.6,1.47h0l-0.121.12c0,0.01-.01.01-0.015,0.02a5.215,5.215,0,0,0-1.2,5.41,1.986,1.986,0,0,0,.141.52,5.257,5.257,0,0,0,4.811,3.18h0.341a2.07,2.07,0,1,1,0,4.14h-0.188A5.274,5.274,0,0,0,493.117,4107.02ZM479,4088.04a7.96,7.96,0,1,0,7.955,7.96A7.966,7.966,0,0,0,479,4088.04Zm0,12.04a4.08,4.08,0,1,1,4.077-4.08A4.083,4.083,0,0,1,479,4100.08Z"
-                  transform="translate(-455 -4072)"/>
-          </svg>
-          <h4 class="about-app__description-title">Integrate</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat eros ac finibus congue.
-            Integer consectetur, lorem nec accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac lorem.
-            Suspendisse potenti. Vestibulum aliquam blandit scelerisque. Aliquam hendrerit vestibulum lorem non
-            placerat. Etiam at diam id erat tincidunt ullamcorper.</p>
-        </div>
-      </div>
-      <div class="col-6 about-app__img">
-        <div class="about-app__img-wrap">
-          <img alt="" src="assets/img/img_ui_3.png">
-        </div>
-      </div>
-    </div>
-    <div class="row about-app about-app--reverse">
-      <div class="col-6 about-app__description">
-        <div class="about-app__description-content">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-            <path class="svg-element"
-                  d="M1016.16,4592H981.841a6.849,6.849,0,0,0-6.841,6.84v39.22a1.937,1.937,0,0,0,3.31,1.37l9.237-9.24h28.613a6.843,6.843,0,0,0,6.84-6.84v-24.51A6.85,6.85,0,0,0,1016.16,4592Zm2.96,31.35a2.968,2.968,0,0,1-2.96,2.97H986.744a1.946,1.946,0,0,0-1.371.56l-6.5,6.5v-34.54a2.966,2.966,0,0,1,2.963-2.96h34.319a2.966,2.966,0,0,1,2.96,2.96v24.51Z"
-                  transform="translate(-975 -4592)"/>
-          </svg>
-          <h4 class="about-app__description-title">Communicate</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat eros ac finibus congue.
-            Integer consectetur, lorem nec accumsan commodo, sem mauris pharetra arcu, id viverra eros ipsum ac
-            lorem. Suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="col-6 about-app__img about-app__img--left">
-        <div class="about-app__img-wrap">
-          <img alt="" src="assets/img/img_ui_4.png">
-        </div>
-      </div>
-    </div>
-    <hr>
-  </div>
-</section>
-<!--What is-->
+        <!--What is-->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section__title">What is Society Pass loyalty platform?</h3>
+                        <p class="section__description">
+                            Society Pass offers an universal, open loop loyalty platform to create permanent customer loyalty, generate revenues for merchants, and replace cash discounting.
+                        </p>
+                    </div>
+                </div>
+                <div class="row about-app">
+                    <div class="col-6 about-app__description">
+                        <div
+                            class="about-app__description-content about-app__description-content--left"
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="51px" height="49px">
+                            <path fill-rule="evenodd"  fill="rgb(13, 116, 241)"
+                            d="M47.931,16.437 L33.655,15.205 L28.081,2.155 C27.078,-0.220 23.657,-0.220 22.654,2.155 L17.079,15.235 L2.833,16.437 C0.238,16.642 -0.824,19.868 1.152,21.569 L11.977,30.895 L8.732,44.737 C8.142,47.259 10.885,49.253 13.127,47.904 L25.367,40.572 L37.608,47.933 C39.849,49.282 42.592,47.288 42.002,44.766 L38.758,30.895 L49.583,21.569 C51.559,19.868 50.526,16.642 47.931,16.437 ZM25.367,35.088 L14.277,41.745 L17.227,29.194 L7.434,20.748 L20.353,19.633 L25.367,7.815 L30.411,19.663 L43.330,20.777 L33.537,29.223 L36.487,41.775 L25.367,35.088 Z"/>
+                       </svg>
+                            <h4 class="about-app__description-title">Society Points</h4>
+                            <p>
+                                Earn/Redeem Society Points at ANY MERCHANT in ANY COUNTRY on SoPa ecosystem and pay for goods/services in-store or online, app or via website
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 about-app__img">
+                        <div class="about-app__img-wrap">
+                            <img alt="" src="assets/img/img_ui_1.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-app about-app--reverse">
+                    <div class="col-6 about-app__description">
+                        <div class="about-app__description-content">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="50px" height="47px">
+                                <path fill-rule="evenodd"  fill="rgb(13, 116, 241)"
+                                d="M44.390,10.563 L39.113,10.563 C39.379,9.813 39.549,8.990 39.549,8.142 C39.549,4.124 36.305,0.880 32.286,0.880 C29.744,0.880 27.542,2.187 26.234,4.148 L25.024,5.770 L23.814,4.124 C22.506,2.187 20.304,0.880 17.762,0.880 C13.743,0.880 10.500,4.124 10.500,8.142 C10.500,8.990 10.669,9.813 10.935,10.563 L5.658,10.563 C2.971,10.563 0.841,12.718 0.841,15.405 L0.817,42.033 C0.817,44.720 2.971,46.874 5.658,46.874 L44.390,46.874 C47.077,46.874 49.231,44.720 49.231,42.033 L49.231,15.405 C49.231,12.718 47.077,10.563 44.390,10.563 ZM32.286,5.722 C33.618,5.722 34.707,6.811 34.707,8.142 C34.707,9.474 33.618,10.563 32.286,10.563 C30.955,10.563 29.866,9.474 29.866,8.142 C29.866,6.811 30.955,5.722 32.286,5.722 ZM17.762,5.722 C19.093,5.722 20.183,6.811 20.183,8.142 C20.183,9.474 19.093,10.563 17.762,10.563 C16.430,10.563 15.341,9.474 15.341,8.142 C15.341,6.811 16.430,5.722 17.762,5.722 ZM44.390,42.033 L5.658,42.033 L5.658,37.191 L44.390,37.191 L44.390,42.033 ZM44.390,29.929 L5.658,29.929 L5.658,17.825 C5.658,16.494 6.747,15.405 8.079,15.405 L17.955,15.405 L14.373,20.295 C13.574,21.384 13.816,22.909 14.905,23.684 C15.970,24.458 17.496,24.216 18.270,23.151 L25.024,13.952 L31.778,23.151 C32.553,24.216 34.078,24.458 35.143,23.684 C36.232,22.909 36.474,21.384 35.675,20.295 L32.093,15.405 L41.969,15.405 C43.301,15.405 44.390,16.494 44.390,17.825 L44.390,29.929 Z"/>
+                            </svg>
+                            <h4 class="about-app__description-title">Redeem Society Points</h4>
+                            <p>
+                                Redeem Society Points for other good/services
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 about-app__img about-app__img--left">
+                        <div class="about-app__img-wrap">
+                            <img alt="" src="assets/img/img_ui_2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-app">
+                    <div class="col-6 about-app__description">
+                        <div
+                            class="about-app__description-content about-app__description-content--left"
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="49px" height="88px"
+                        >
+                            <path fill-rule="evenodd"  fill="rgb(13, 116, 241)"
+                            d="M48.811,82.923 C47.855,86.419 45.880,87.940 42.279,87.942 C38.799,87.945 35.318,87.943 31.837,87.943 C23.624,87.943 15.411,87.951 7.198,87.938 C4.007,87.933 1.813,86.176 1.075,83.102 C1.048,82.990 0.974,82.889 0.922,82.784 C0.922,58.313 0.922,33.842 0.922,9.372 C0.980,9.201 1.053,9.033 1.095,8.857 C1.731,6.209 3.681,4.472 6.397,4.152 C6.729,4.113 7.067,4.111 7.402,4.110 C9.471,4.107 11.540,4.109 13.809,4.109 C11.765,6.916 10.752,9.915 10.819,13.377 C9.450,13.377 8.119,13.376 6.789,13.377 C6.362,13.377 5.933,13.362 5.508,13.390 C4.555,13.452 3.925,14.029 3.787,14.977 C3.734,15.336 3.741,15.706 3.741,16.071 C3.739,36.050 3.739,56.029 3.739,76.008 C3.740,78.187 4.270,78.723 6.423,78.723 C18.786,78.723 31.148,78.723 43.510,78.722 C45.537,78.722 46.103,78.151 46.103,76.100 C46.104,56.060 46.104,36.020 46.103,15.981 C46.103,13.904 45.577,13.378 43.511,13.377 C42.052,13.376 40.594,13.377 39.048,13.377 C39.053,9.989 38.147,6.950 35.998,4.109 C36.619,4.109 37.057,4.109 37.496,4.109 C39.114,4.109 40.732,4.107 42.350,4.109 C45.849,4.113 47.914,5.723 48.797,9.128 C48.820,9.214 48.879,9.291 48.921,9.372 C48.921,33.842 48.921,58.313 48.921,82.784 C48.883,82.830 48.825,82.870 48.811,82.923 ZM29.075,82.124 C26.278,82.124 23.528,82.124 20.750,82.124 C20.750,82.825 20.750,83.460 20.750,84.189 C23.565,84.189 26.315,84.189 29.075,84.189 C29.075,83.466 29.075,82.810 29.075,82.124 ZM37.274,61.841 C39.131,61.845 40.293,63.038 40.311,64.878 C40.326,66.310 40.326,67.743 40.312,69.175 C40.294,71.007 39.119,72.197 37.268,72.204 C33.089,72.222 28.911,72.210 24.732,72.211 C20.706,72.211 16.680,72.215 12.654,72.210 C10.374,72.207 9.311,71.137 9.304,68.850 C9.300,67.509 9.287,66.167 9.309,64.827 C9.339,63.017 10.479,61.846 12.295,61.843 C20.621,61.826 28.948,61.826 37.274,61.841 ZM11.502,65.490 C11.501,66.557 11.500,67.625 11.503,68.693 C11.506,69.940 11.572,70.008 12.782,70.014 C13.514,70.017 14.247,70.014 14.980,70.014 C22.246,70.014 29.513,70.015 36.779,70.013 C38.048,70.013 38.114,69.942 38.116,68.651 C38.118,67.583 38.117,66.515 38.116,65.448 C38.115,64.109 38.043,64.032 36.737,64.031 C32.768,64.029 28.799,64.031 24.830,64.031 C20.861,64.031 16.892,64.030 12.923,64.031 C11.551,64.032 11.504,64.082 11.502,65.490 ZM15.694,65.539 C16.556,65.521 17.221,66.155 17.233,67.006 C17.244,67.855 16.588,68.516 15.736,68.515 C14.917,68.514 14.281,67.906 14.249,67.092 C14.215,66.229 14.841,65.557 15.694,65.539 ZM21.753,65.539 C22.615,65.528 23.273,66.168 23.277,67.020 C23.281,67.867 22.618,68.523 21.766,68.515 C20.948,68.507 20.319,67.893 20.293,67.077 C20.266,66.213 20.895,65.550 21.753,65.539 ZM27.865,65.542 C28.719,65.561 29.355,66.236 29.321,67.086 C29.288,67.928 28.595,68.555 27.744,68.514 C26.932,68.475 26.336,67.836 26.342,67.011 C26.348,66.150 26.1000,65.522 27.865,65.542 ZM33.872,65.540 C34.731,65.544 35.380,66.199 35.367,67.050 C35.355,67.894 34.677,68.538 33.825,68.515 C32.975,68.493 32.347,67.813 32.382,66.956 C32.415,66.138 33.049,65.536 33.872,65.540 ZM14.625,36.092 C14.773,36.087 14.920,36.063 15.179,36.037 C15.179,35.171 15.186,34.326 15.178,33.482 C15.160,31.625 15.948,30.221 17.627,29.429 C19.349,28.618 20.952,28.968 22.386,30.184 C23.199,30.875 24.014,31.563 24.920,32.330 C25.729,31.648 26.548,30.981 27.340,30.284 C28.775,29.020 30.387,28.597 32.160,29.403 C33.928,30.207 34.707,31.677 34.667,33.603 C34.650,34.391 34.664,35.179 34.664,36.023 C38.278,36.382 38.871,37.041 38.871,40.564 C38.871,44.834 38.874,49.105 38.869,53.375 C38.866,55.675 37.671,56.902 35.389,56.905 C28.399,56.916 21.409,56.917 14.419,56.905 C12.187,56.901 10.976,55.665 10.973,53.434 C10.967,48.889 10.970,44.344 10.972,39.799 C10.973,37.235 12.024,36.171 14.625,36.092 ZM31.316,31.425 C30.453,30.999 29.659,31.196 28.946,31.803 C28.157,32.475 27.374,33.155 26.576,33.817 C25.451,34.749 24.391,34.750 23.278,33.823 C22.435,33.121 21.612,32.393 20.761,31.701 C20.089,31.154 19.325,31.031 18.537,31.418 C17.793,31.784 17.389,32.401 17.384,33.246 C17.377,34.155 17.382,35.065 17.382,36.038 C22.473,36.038 27.430,36.038 32.465,36.038 C32.465,35.137 32.453,34.289 32.468,33.442 C32.485,32.534 32.138,31.831 31.316,31.425 ZM36.621,39.161 C36.601,38.855 36.077,38.344 35.772,38.335 C33.404,38.266 31.032,38.297 28.599,38.297 C28.599,40.068 28.599,41.721 28.599,43.381 C31.310,43.381 33.946,43.381 36.662,43.381 C36.662,41.942 36.714,40.546 36.621,39.161 ZM28.601,45.683 C28.601,46.600 28.601,47.460 28.601,48.318 C31.317,48.318 33.957,48.318 36.634,48.318 C36.634,47.422 36.634,46.581 36.634,45.683 C33.888,45.683 31.248,45.683 28.601,45.683 ZM28.587,54.697 C31.023,54.697 33.397,54.712 35.771,54.685 C36.327,54.679 36.664,54.323 36.666,53.732 C36.671,52.727 36.668,51.721 36.668,50.644 C33.901,50.644 31.239,50.644 28.587,50.644 C28.587,52.018 28.587,53.317 28.587,54.697 ZM25.312,54.731 C26.100,54.752 26.353,54.555 26.346,53.726 C26.305,48.884 26.327,44.042 26.324,39.201 C26.324,38.933 26.297,38.665 26.280,38.366 C25.303,38.366 24.439,38.366 23.515,38.366 C23.515,38.772 23.515,39.103 23.515,39.435 C23.515,43.942 23.515,48.449 23.515,52.955 C23.515,54.721 23.516,54.682 25.312,54.731 ZM21.265,38.300 C18.817,38.300 16.418,38.273 14.022,38.336 C13.736,38.344 13.239,38.829 13.222,39.115 C13.138,40.528 13.184,41.948 13.184,43.356 C15.953,43.356 18.612,43.356 21.265,43.356 C21.265,41.649 21.265,40.016 21.265,38.300 ZM21.242,45.681 C18.528,45.681 15.889,45.681 13.210,45.681 C13.210,46.575 13.210,47.416 13.210,48.320 C15.949,48.320 18.589,48.320 21.242,48.320 C21.242,47.406 21.242,46.547 21.242,45.681 ZM14.297,54.708 C15.396,54.717 16.494,54.712 17.593,54.713 C18.806,54.713 20.018,54.713 21.241,54.713 C21.241,53.269 21.241,51.948 21.241,50.600 C18.549,50.600 15.931,50.600 13.171,50.600 C13.171,51.652 13.182,52.623 13.167,53.593 C13.156,54.373 13.568,54.702 14.297,54.708 ZM24.857,24.719 C18.388,24.702 13.020,19.327 13.019,12.865 C13.017,6.249 18.334,0.929 24.940,0.937 C31.503,0.945 36.815,6.254 36.821,12.811 C36.827,19.380 31.445,24.737 24.857,24.719 ZM24.902,3.135 C19.515,3.161 15.210,7.494 15.218,12.884 C15.225,18.167 19.617,22.519 24.943,22.519 C30.281,22.520 34.651,18.110 34.624,12.749 C34.597,7.429 30.229,3.109 24.902,3.135 ZM29.717,12.270 C27.997,13.175 27.594,14.385 28.459,16.145 C28.786,16.811 28.220,17.456 27.286,17.435 C27.052,17.284 26.641,17.041 26.254,16.765 C24.949,15.833 24.897,15.829 23.627,16.742 C23.355,16.937 23.098,17.217 22.795,17.288 C22.449,17.369 21.959,17.387 21.716,17.197 C21.473,17.007 21.258,16.428 21.375,16.189 C22.248,14.419 21.880,13.144 20.089,12.239 C19.856,12.121 19.674,11.498 19.777,11.226 C19.898,10.909 20.397,10.474 20.664,10.517 C22.659,10.836 23.679,9.986 24.025,8.061 C24.073,7.794 24.609,7.422 24.895,7.442 C25.234,7.466 25.779,7.820 25.832,8.105 C26.179,9.994 27.178,10.823 29.133,10.513 C29.412,10.468 29.947,10.879 30.047,11.183 C30.148,11.489 29.968,12.138 29.717,12.270 Z"/>
+                        </svg>
+                            <h4 class="about-app__description-title">
+                                Redeem digital offers in-store and online, app or via website
+                            </h4>
+                            <!-- <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Pellentesque placerat eros ac
+                                finibus congue. Integer consectetur, lorem nec
+                                accumsan commodo, sem mauris pharetra arcu, id
+                                viverra eros ipsum ac lorem. Suspendisse
+                                potenti. Vestibulum aliquam blandit scelerisque.
+                                Aliquam hendrerit vestibulum lorem non placerat.
+                                Etiam at diam id erat tincidunt ullamcorper.
+                            </p> -->
+                            <a
+                                href="#"
+                                class="site-btn site-btn--accent about-app__btn"
+                                >Redeem Now</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-6 about-app__img">
+                        <div class="about-app__img-wrap">
+                            <img alt="" src="assets/img/img_ui_3.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-app about-app--reverse">
+                    <div class="col-6 about-app__description">
+                        <div class="about-app__description-content">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="48px" height="49px"
+                            >
+                                <path fill-rule="evenodd"  fill="rgb(13, 116, 241)"
+                                d="M23.998,0.973 C10.745,0.974 0.002,11.718 0.002,24.971 C0.003,38.224 10.747,48.968 24.001,48.967 C37.253,48.967 47.997,38.223 47.997,24.970 C47.996,11.717 37.252,0.973 23.998,0.973 ZM23.998,8.148 C28.382,8.148 31.936,11.701 31.937,16.085 C31.938,20.469 28.384,24.023 24.001,24.023 C19.617,24.024 16.063,20.471 16.062,16.087 C16.062,16.087 16.062,16.086 16.062,16.086 C16.062,11.703 19.615,8.150 23.998,8.149 L23.998,8.148 ZM23.993,42.693 C19.788,42.698 15.720,41.198 12.525,38.464 C11.772,37.822 11.338,36.882 11.338,35.893 C11.339,31.472 14.924,27.889 19.345,27.890 C19.357,27.890 19.369,27.890 19.382,27.890 L28.618,27.890 C33.033,27.869 36.628,31.431 36.649,35.846 C36.649,35.861 36.649,35.877 36.649,35.893 C36.650,36.882 36.216,37.821 35.464,38.462 C32.269,41.197 28.200,42.698 23.993,42.693 Z"/>
+                            </svg>
+                            <h4 class="about-app__description-title">
+                                Society Pass Profiles
+                            </h4>
+                            <p>
+                                Register, login, view/update profiles, view Society Point balance/transaction history, receive promotions and notifications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 about-app__img about-app__img--left">
+                        <div class="about-app__img-wrap">
+                            <img alt="" src="assets/img/img_ui_4_2.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--What is-->
 
-<!--Questions-->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">Have any questions?</h3>
-      </div>
-    </div>
-    <div class="row questions">
-      <div class="col-4 col-m-12">
-        <div class="questions__card card">
-          <img alt="" src="assets/img/img_question_1.png" class="questions__icon">
-          <h4 class="questions__title">Who is Sigma for?</h4>
-          <p class="questions__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-            placerat eros ac finibus congue. Integer consectetur, lorem nec accumsan commodo, sem mauris pharetra
-            arcu, id viverra eros ipsum ac lorem. Suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-12">
-        <div class="questions__card card">
-          <img alt="" src="assets/img/img_question_2.png" class="questions__icon">
-          <h4 class="questions__title">How Sigma works?</h4>
-          <p class="questions__answer">Sed tristique commodo bibendum. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Cras molestie arcu in mauris euismod, quis faucibus urna
-            aliquam.</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-12">
-        <div class="questions__card card">
-          <img alt="" src="assets/img/img_question_3.png" class="questions__icon">
-          <h4 class="questions__title">In which countries is Sigma available?</h4>
-          <p class="questions__answer">Donec non vestibulum eros, auctor elementum felis. Mauris arcu lectus,
-            vestibulum in aliquet a, interdum in enim. Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Aenean facilisis enim dui, ut hendrerit ligula lobortis sit amet. Nunc pulvinar
-            risus id lectus posuere, at rutrum dui commodo.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="site-btn--center">
-          <a class="site-btn site-btn--light" href="08_faq.html">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Questions-->
+        <!--Download-->
+        <section class="section section--light section--last" id="download">
+            <div class="container download">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="download__title">Download Society Pass App Today</h3>
+                        <h3>
+                            and makes your life easier
+                        </h3>
+                    </div>
+                </div>
+                <div class="row download__btns">
+                    <div class="col-6">
+                        <a class="site-btn site-btn--download site-btn--right download__btn-first" href="https://play.google.com/store/apps/details?id=com.sopa.loyalty">
+                            <img src="assets/img/1024px-Google_Play_Store_badge_EN-2.svg" alt="playstore">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a class="site-btn site-btn--download site-btn--left" href="https://apps.apple.com/us/app/society-pass/id1629605732">
+                            <img src="assets/img/8-2.svg" alt="playstore">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img
+                alt=""
+                class="section__img"
+                src="assets/img/img_backgroud_footer.png"
+            />
+        </section>
+        <!--Download-->
 
-<!--Testimonials-->
-<section class="section section--light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">What users think about Sigma</h3>
-      </div>
-    </div>
-    <div class="row feedback">
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_1.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Sarah</p>
-            <a href="" class="link link--gray feedback__nick">@sarah-dev</a>
-          </div>
-          <p class="feedback__main">I love <a href="" class="link link--accent">@sigma</a> - fantastic app, and
-            providing <a href="" class="link link--accent">#nonprofits</a> and <a href="" class="link link--accent">
-              #students</a> freememberships :) Thanks for making life easy! <a href="" class="link link--accent">#mobile
-            </a> <a href="" class="link link--accent">#work</a> <a href="" class="link link--accent">#free</a></p>
+        <!--Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_2.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">John</p>
-            <a href="" class="link link--gray feedback__nick">@john_doe</a>
-          </div>
-          <p class="feedback__main">Best app ever!!! All free streaming <a href="" class="link link--accent">#sigma</a>
-            for my fellow blues fans <a href="" class="link link--accent">@Fred</a>
-            <a href="" class="link link--accent">@George etc</a></p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_3.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Pharah</p>
-            <a href="" class="link link--gray feedback__nick">@pharah</a>
-          </div>
-          <p class="feedback__main">Success of <a href="" class="link link--accent">@sigma</a> - app crossed 16
-            million downloads with more than 4 million active users.
-            <a href="" class="link link--accent">#congratulations</a></p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_4.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Andrew</p>
-            <a href="" class="link link--gray feedback__nick">@penandrew</a>
-          </div>
-          <p class="feedback__main">I can't stop telling people about how good <a href="" class="link link--accent">
-            @sigma</a> app! Best purchase ever.</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_5.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">George</p>
-            <a href="" class="link link--gray feedback__nick">@GeorgeW</a>
-          </div>
-          <p class="feedback__main"><a href="" class="link link--accent">@sigma</a> Would you please add vector
-            icons to your app? Thanks in advance)</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_6.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Jeff</p>
-            <a href="" class="link link--gray feedback__nick">@JJfree</a>
-          </div>
-          <p class="feedback__main">Just buy a license for <a href="" class="link link--accent">@sigma</a> pro! Its
-            been super great to manage my new <a href="" class="link link--accent">#website</a>! Thanks a lot!</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_7.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Jay George</p>
-            <a href="" class="link link--gray feedback__nick">@Jay_George</a>
-          </div>
-          <p class="feedback__main">The new version of <a href="" class="link link--accent feedback__nick">@sigma</a>
-            is really fantastic. My favourite manage tool; especially with its excellent
-            <a href="" class="link link--accent feedback__nick">#collaboration</a> features.</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_8.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Robert</p>
-            <a href="" class="link link--gray feedback__nick">@rob_Z</a>
-          </div>
-          <p class="feedback__main"><a href="" class="link link--accent feedback__nick">@sigma</a> thanks for the
-            great tool. You are really the best. Amazing. I am 3 years with you already. Nobody compares. Don't
-            stop!</p>
-        </div>
-      </div>
-      <div class="col-4 col-m-6 feedback__item">
-        <div class="feedback__card card">
-          <img alt="" class="feedback__avatar" src="assets/img/img_avatar_9.png">
-          <a href="" class="feedback__social"><span><i class="mdi mdi-twitter" aria-hidden="true"></i></span></a>
-          <div class="feedback__header">
-            <p class="feedback__name">Jess</p>
-            <a href="" class="link link--gray feedback__nick">@a-jess</a>
-          </div>
-          <p class="feedback__main">You can now do some badass diagramming with
-            <a href="" class="link link--accent feedback__nick">@sigma</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Testimonials-->
+        <!--Footer-->
 
-<!--Trusted by-->
-<section class="section section--dark">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="section__title">Trusted by</h3>
-      </div>
-    </div>
-    <div class="row logo">
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_1.png">
-        </div>
-      </div>
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_2.png">
-        </div>
-      </div>
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_3.png">
-        </div>
-      </div>
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_4.png">
-        </div>
-      </div>
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_5.png">
-        </div>
-      </div>
-      <div class="col-2 logo__img-wrap">
-        <div class="logo__img">
-          <img alt="" src="assets/img/img_logo_6.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Trusted by-->
-
-<!--Download-->
-<section class="section section--last">
-  <div class="container download">
-    <div class="row">
-      <div class="col-12">
-        <h3 class="download__title">Download Sigma today</h3>
-        <h3>and get started with a free trial for your business</h3>
-      </div>
-    </div>
-    <div class="row download__btns">
-      <div class="col-6">
-        <a href="" class="site-btn site-btn--accent site-btn--download site-btn--right download__btn-first">
-          <img alt="" src="assets/img/img_appstore.png"></a>
-      </div>
-      <div class="col-6">
-        <a href="" class="site-btn site-btn--dark site-btn--download site-btn--left">
-          <img alt="" src="assets/img/img_google.png"></a>
-      </div>
-    </div>
-  </div>
-  <img alt="" class="section__img" src="assets/img/img_backgroud_footer.png">
-</section>
-<!--Download-->
-
-<!--Footer menu-->
-<div class="container footer-menu">
-  <div class="row">
-    <div class="col-12">
-      <a href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-          <path data-name="Sigma symbol" class="svg-element"
-                d="M237.418,8583.56a12.688,12.688,0,0,0,.419-3.37c-0.036-5.24-2.691-9.68-7.024-13.2h-3.878a20.819,20.819,0,0,1,4.478,13.01c0,4.56-2.456,10.2-6.413,11.4a16.779,16.779,0,0,1-2.236.51c-10.005,1.55-14.109-17.54-9.489-23.31,2.569-3.21,6.206-4.08,11.525-4.08h17.935A24.22,24.22,0,0,1,237.418,8583.56Zm-12.145-24.45c-8.571.02-12.338,0.98-16.061,4.84-6.267,6.49-6.462,20.69,4.754,27.72a24.092,24.092,0,1,1,27.3-32.57h-16v0.01Z"
-                transform="translate(-195 -8544)"/>
-        </svg>
-      </a>
-      <nav class="footer-menu__nav">
-        <ul>
-          <li><a href="07_about.html" class="link link--gray">About</a></li>
-          <li><a href="08_faq.html" class="link link--gray">FAQ</a></li>
-          <li><a href="09_privacy.html" class="link link--gray">Privacy</a></li>
-          <li><a href="blog/12_blog.html" class="link link--gray">Blog</a></li>
-        </ul>
-      </nav>
-      <p class="footer-menu__social">
-        <a class="link link--gray" href="">
-          <i class="mdi mdi-twitter" aria-hidden="true"></i>
-        </a>
-        <a class="link link--gray" href="">
-          <i class="mdi mdi-facebook" aria-hidden="true"></i>
-        </a>
-        <a class="link link--gray" href="">
-          <i class="mdi mdi-linkedin" aria-hidden="true"></i>
-        </a>
-        <a class="link link--gray" href="">
-          <i class="mdi mdi-instagram" aria-hidden="true"></i>
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
-<!--Footer menu-->
-
-<hr>
-
-<!--Footer-->
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <p>© 2017 Sigma – Featured as App Presentation HTML Template | Made by
-          <a href="http://themes.aspirity.com" class="link link--gray">Aspirity</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Footer-->
-
-<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-<script src="assets/js/vendor/jquery.waypoints.js"></script>
-<script src="assets/js/menu.js"></script>
-<script src="assets/js/mobile-menu.js"></script>
-<script src="assets/js/video.js"></script>
-<script src="assets/js/style-switcher.js"></script>
-</body>
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="assets/js/vendor/jquery.waypoints.js"></script>
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/mobile-menu.js"></script>
+        <script src="assets/js/video.js"></script>
+    </body>
 </html>

@@ -1,7 +1,7 @@
 // *** RUN YOUTUBE VIDEO IN CLICK
 
 (function () {
-  let video = '<iframe class=\'embed-responsive-item\' src=\'https://www.youtube.com/embed/{%video%}?rel=0&amp;showinfo=0&autoplay=1\' frameborder=\'0\' allowfullscreen></iframe>';
+  let video = '<iframe class=\'embed-responsive-item\' src=\'assets/video/sopa-video.mp4\' frameborder=\'0\' allowfullscreen></iframe>';
   let video_frame = $('.video__video');
   video_frame.on('click', function (e) {
     e.preventDefault();
